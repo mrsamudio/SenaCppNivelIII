@@ -13,6 +13,10 @@ using namespace std;
 
 #include "inicio.h"
 
+/** Método principal de ejecución del programa
+ * @brief main
+ * @return
+ */
 int main()
 {
     inicio h;

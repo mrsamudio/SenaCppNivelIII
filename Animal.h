@@ -26,6 +26,10 @@ public:
     inline bool getSangre(){return this->sangreCaliente;}
     inline void setSangre(bool caliente){this->sangreCaliente = caliente;}
 
+    /** Es carnivoro o herbivoro?
+     * @brief setTipoComida
+     * @param tipo
+     */
     inline void setTipoComida(char tipo){
         if (tipo == '0') {
             this->tipoComida = TIPOCOMIDA[0];
@@ -35,6 +39,10 @@ public:
     }
     inline string getTipoComida(){return this->tipoComida;}
 
+    /** Es salvaje, de criadero o doméstico?
+     * @brief setTipoHabito
+     * @param habito
+     */
     inline void setTipoHabito(char habito){
         switch (habito) {
         case '0':

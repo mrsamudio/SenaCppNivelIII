@@ -9,6 +9,15 @@
 class Reptil : public Animal
 {
 public:
+    /** Constructor del reptil
+     * @brief Reptil
+     * @param nombre
+     * @param sangre
+     * @param color
+     * @param tipoComida
+     * @param habito
+     * @param dientes
+     */
     inline Reptil(string nombre, bool sangre, string color,char tipoComida, char habito, int dientes){
         setNombre(nombre);
         setSangre(sangre);
