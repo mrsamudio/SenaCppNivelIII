@@ -12,10 +12,13 @@
  */
 void inicio::limpiarConsola()
 {
-#ifdef WINDOWS
+// directiva para windows 10
+#ifdef _WIN32
     system("cls");
-#else
+#elif __linux__
     system("clear");
+#else
+    cout <<"Sistema operativo no reconocido";
 #endif
 }
 
