@@ -12,6 +12,16 @@ public:
     const vector<string> TIPOALAS = {"Aerodinámica", "Eliptica", "Larga", "Ancha"};
     const vector<string> TIPOPLUMAS = {"Primarias", "Secundarias", "Timoneras", "Coberteras", "Plumón"};
 
+    /** Constructor del ave
+     * @brief Ave
+     * @param nombre
+     * @param sangre
+     * @param color
+     * @param tipoComida
+     * @param habito
+     * @param ala
+     * @param pluma
+     */
     inline Ave(string nombre, bool sangre, string color,char tipoComida, char habito, char ala, char pluma){
         setNombre(nombre);
         setSangre(sangre);
@@ -28,6 +38,10 @@ public:
     inline void setColorPlumas(string color){this->colorPlumas = color;}
 
     inline string getAla(){return this->ala;}
+    /** Qué tipo de ala tiene?
+     * @brief setAla
+     * @param ala
+     */
     inline void setAla(char ala){
         switch (ala) {
         case '0':
@@ -48,6 +62,10 @@ public:
     }
 
     inline string getPluma(){return this->pluma;}
+    /** Qué tipo de pluma tiene?
+     * @brief setPluma
+     * @param pluma
+     */
     inline void setPluma(char pluma){
         switch (pluma) {
         case '0':

@@ -12,6 +12,15 @@ public:
 
     const vector<string> EXTREMIDADES ={"Plantígradas", "Digitígradas", "Unguladas"};
 
+    /** Constructor del Mamifero
+     * @brief Mamifero
+     * @param nombre
+     * @param sangre
+     * @param color
+     * @param tipoComida
+     * @param habito
+     * @param patas
+     */
     inline Mamifero(string nombre, bool sangre, string color, char tipoComida, char habito, char patas){
         setNombre(nombre);
         setSangre(sangre);
@@ -26,6 +35,10 @@ public:
     inline void setColorPelo(string color){this->colorPelo = color;}
     inline string getColorPelo(){return this->colorPelo;}
 
+    /** Qué tipo de extremidad tiene?
+     * @brief setExtremidades
+     * @param patas
+     */
     inline void setExtremidades(char patas){
         switch (patas) {
         case '0':

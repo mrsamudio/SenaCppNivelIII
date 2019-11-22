@@ -7,19 +7,30 @@
 
 
 // Métodos utilitarios
+/** Limpiar Consola en windows o linux
+ * @brief inicio::limpiarConsola
+ */
 void inicio::limpiarConsola()
 {
-#ifdef WINDOWS
+// directiva para windows 10
+#ifdef _WIN32
     system("cls");
-#else
+#elif __linux__
     system("clear");
+#else
+    cout <<"Sistema operativo no reconocido";
 #endif
 }
 
+/** Da tiempo al usuario para ver el resultado
+ * @brief inicio::pausa
+ * @param seg
+ */
 void inicio::pausa(int seg)
 {
     this_thread::sleep_for(chrono::seconds(seg));
 }
+
 /*
 ostream& operator<<(ostream& out, const inicio &mamife){
     out << "{";
@@ -27,6 +38,9 @@ ostream& operator<<(ostream& out, const inicio &mamife){
     return out;
 }*/
 
+/** Permite que el usuario pueda ingresar 3 o más animales por cada tipo
+ * @brief inicio::pregunta
+ */
 void inicio::pregunta()
 {
     unsigned int num = 0;
@@ -48,6 +62,9 @@ void inicio::pregunta()
 }
 
 //Método menú
+/** Menú para la interfaz de linea de comandos
+ * @brief inicio::menu
+ */
 void inicio::menu()
 {
 
