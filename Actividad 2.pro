@@ -8,4 +8,5 @@ SOURCES += \
         Operaciones.cpp \
 
 HEADERS += \
-    Operaciones.h
+    Operaciones.h \
+    Utilidades.h
