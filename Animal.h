@@ -20,7 +20,7 @@ public:
     inline ~Animal(){}
 
     //Métodos get y set
-     string getNombre(){return this->nombre;}
+    string getNombre(){return this->nombre;}
     inline void setNombre(string nombre){this->nombre = nombre;}
 
     inline bool getSangre(){return this->sangreCaliente;}

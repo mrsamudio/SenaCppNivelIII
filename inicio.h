@@ -8,9 +8,13 @@
 #include <chrono>
 #include <thread>
 #include <iterator>
+#include <iostream>
+#include <string>
 #include "Mamifero.h"
 #include "Ave.h"
 #include "Reptil.h"
+
+using namespace std;
 
 class inicio
 {
@@ -31,9 +35,17 @@ public:
     // Creación de objetos animales
 
 
-    //Métodos get y set
+    //Métodos get y set para los ingresos de animales
+
+    /** Establece los ingresos mínimos de animales y ajusta los vectores
+     * @brief setMin
+     * @param min
+     */
     inline void setMin(unsigned int min){
         this->min = min;
+        this->m.resize(this->min);
+        this->a.resize(this->min);
+        this->r.resize(this->min);
     }
     inline  unsigned int getMin(){return this->min;}
 
@@ -50,7 +62,7 @@ private:
 
     string nombre ="";
     bool sangre;
-    string color;
+    string color = "";
     char tipoComida, habito, patas, ala, pluma;
     int dientes;
 

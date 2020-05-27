@@ -25,5 +25,8 @@ int main()
     h.menu();
     h.~inicio();
 
+    cout << "Digite enter para continuar";
+    getchar();
+
     return 0;
 }
