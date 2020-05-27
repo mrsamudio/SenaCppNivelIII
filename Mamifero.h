@@ -10,6 +10,7 @@ class Mamifero : public Animal
 {
 public:
 
+//
     const vector<string> EXTREMIDADES ={"Plantígradas", "Digitígradas", "Unguladas"};
 
     /** Constructor del Mamifero
@@ -29,7 +30,7 @@ public:
         setTipoHabito(habito);
         setExtremidades(patas);
     }
-    inline ~Mamifero(){cout << "Objeto destruido" << endl;}
+    inline ~Mamifero(){cout << "Objeto Mamifero destruido" << endl;}
 
     //Métodos get y set
     inline void setColorPelo(string color){this->colorPelo = color;}
@@ -51,10 +52,11 @@ public:
             this->extremidades = EXTREMIDADES[2];
             break;
         default:
+            this->extremidades = "Indeterminado";
             break;
         }
-        this->extremidades = patas;
     }
+
     string getExtremidades(){return this->extremidades;}
 
 
