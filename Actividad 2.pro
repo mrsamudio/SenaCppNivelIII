@@ -9,3 +9,7 @@ SOURCES += \
 
 HEADERS += \
     Operaciones.h
+
+DISTFILES += \
+    LICENSE \
+    README.md
