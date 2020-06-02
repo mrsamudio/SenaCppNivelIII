@@ -392,10 +392,12 @@ public:
      * @return
      */
     inline char genAleatorioChar(){
-        uniform_int_distribution<uint32_t> uint_aleatorio100(0,100); // Con rango de 0 a 10
+        // Con rango de 48 a 57 representación decimal de caracteres ascii
+        uniform_int_distribution<uint32_t> uint_aleatorio100(48,57);
+
         semilla = rand();
         this->gnr.seed(semilla);
-        return (char) uint_aleatorio100(gnr);
+        return (int) uint_aleatorio100(gnr);
     }
 
 
