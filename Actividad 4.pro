@@ -1,11 +1,14 @@
 TEMPLATE = app
-CONFIG += console c++11
+CONFIG += console c++17
 CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp \
-    inicio.cpp
+        NumeroImaginario.cpp \
+        main.cpp
 
 HEADERS += \
-    inicio.h
+    NumeroImaginario.h
+
+DISTFILES += \
+    README.md
